@@ -1,0 +1,44 @@
+#content {
+    display: flex;
+    margin: 25px;
+    justify-content: space-between;
+   
+}
+
+body {
+    /*body background vertical linear gradient*/
+    background: linear-gradient(#081221, #03080f);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+#headings {
+    justify-content: space-between;
+    color: #ffffff; /*headings, button text, labels*/
+    color: #c1d1e8; /*text color*/
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+}
+
+#sidepanel {
+    justify-content: space-between;
+    color: #ffffff;
+    color: #c1d1e8;
+    color: #0e1a2b; /*card panel background color*/
+    color: #182c47; /*input background color*/
+    color: #5692e8; /*buttons / accent blue*/
+    text-align: left;
+    font-family: "Mulish", sans-serif;
+}
+
+#gamebox {
+    justify-content: space-between;
+    color: #ffffff;
+    text-align: left;
+    font-family: "Mulish", sans-serif;
+}
+
+
