@@ -14,21 +14,53 @@
 <!---ADDED THIS COMMENT--->
 
 </head>
-<body>
+<body class="body">
+    
+    <div id="headings">
+        <h1>VIDEO GAMES</h1>
+
+        <h1>CONTACT</h1>
+    </div>
+            
+
     <div id="content">
-
-        <div id="headings">
-            <h1>VIDEO GAMES</h1>
-
-            <h2>CONTACT</h2>
-
-        </div>
+        
         <div id="sidepanel">
-            <h3>filter</h3>
+            <h3>Filter Results</h3>
+            <h4>Name (contains)</h4>
+                <input type="text" placeholder="Text String">
+            <h4>Minimum Score</h4>
+                <input type="text" placeholder="1 - 10">
+            <h4>Order By</h4>
+                <select>
+                    <option>Release Date</option>
+                    <option>Score</option>
+                    <option>Name</option>
+                </select> <br>
+            <button>Clear</button>
         </div>
 
         <div id="gamebox">
-            <h3>Game Title</h3>
+            
+            <div class="card">
+                <h2>Game Title</h2>
+                <h4>Release Date: DD/MM/YYYY</h4>
+                <p>summary</p>
+            </div>
+
+            <div class="card">
+                <h2>Game Title</h2>
+                <h4>Release Date: DD/MM/YYYY</h4>
+                <p>summary</p>
+            </div>
+
+            <div class="card">
+                <h2>Game Title</h2>
+                <h4>Release Date: DD/MM/YYYY</h4>
+                <p>summary</p>
+            </div>
+
+            
         </div>
 
     </div>
