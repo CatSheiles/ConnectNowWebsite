@@ -17,7 +17,7 @@
 
 
 h1{
-    margin-right: 21px;
+    margin-right: 12rem;
 }
 
 body {
@@ -69,15 +69,46 @@ body {
     background: var(--CardPanelBackground);
     margin-bottom: 1.5rem;
     padding: 0.25rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
 
+.card-summary{
+    width: 100%;
+}
+
+h2, h3 {
+    font-size: 12pt;
+}
+
+h4 {
+    font-size: 10pt;
+}
+
+div > p{
+    font-size: 6pt;
+}
+
+.score{
+    padding-top: 0.25rem;
+    align-self: center;
+    justify-self: flex-end;
+    background: var(--buttonColor);
+    border-radius: 50%;
+    width: 30px; height: 30px;
+    text-align: center;
 }
 
 input{
     background: var(--inputBackground);
     border: none;
     padding: 6px;
-    color: var(--headingButtonText);
 }
+
+::placeholder {
+    color: var(--headingButtonText);
+  }
 
 select{
     background: var(--inputBackground);
