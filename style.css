@@ -1,3 +1,4 @@
+/*used root to define colors so you don't need to retype in every section */
 :root{
     --CardPanelBackground: #0e1a2b;
     --inputBackground: #182c47;
@@ -14,8 +15,6 @@
     margin: 50px;
 }
 
-
-
 h1{
     margin-right: 12rem;
 }
@@ -28,7 +27,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
 
 #headings {
     display: flex;
@@ -50,9 +48,7 @@ body {
     background: var(--CardPanelBackground);
     padding: 5pt;
     margin-right: 75px;
-
     width: 25%;
-
     display: flex;
     flex-direction: column;
 }
@@ -74,6 +70,7 @@ body {
     align-items: stretch;
 }
 
+/*make width 100% to ensure it takes up full width of card - useful for short summary games that threw rating position into chaos */
 .card-summary{
     width: 100%;
 }
@@ -90,6 +87,7 @@ div > p{
     font-size: 6pt;
 }
 
+/*making a quick blue background using square with cut-off corners to symbolise blue circle around number */
 .score{
     padding-top: 0.25rem;
     align-self: center;
@@ -106,6 +104,7 @@ input{
     padding: 6px;
 }
 
+/*input text color defaults as an opaque color so changing to headingButtonText color */
 ::placeholder {
     color: var(--headingButtonText);
   }
