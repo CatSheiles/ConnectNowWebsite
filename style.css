@@ -17,6 +17,10 @@
 
 h1{
     margin-right: 12rem;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 body {
@@ -36,13 +40,31 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+#headings>h1:hover{
+    color: var(--buttonColor);
+}
+
 #content {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
 
-#sidepanel {
+@media (max-width: 800px)
+{
+    #content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#contact{
+    display: none;
+    font-family: "Montserrat";
+    color: var(--textColor);
+}
+
+.sidepanel {
     color: var(--textColor);
     font-family: "Mulish", sans-serif;
     background: var(--CardPanelBackground);

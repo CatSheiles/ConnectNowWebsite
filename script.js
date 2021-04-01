@@ -5,7 +5,21 @@ api.send();
 
 let filterResults = "";
 let object = [];
+let content = document.getElementById("content");
 let  gameBox = document.getElementById("gamebox");
+let contact = document.getElementById("contact");
+
+function VideoGamesClick()
+{
+    content.style.display = "flex";
+    contact.style.display = "none";
+}
+
+function contactClick()
+{
+    content.style.display = "none";
+    contact.style.display = "initial";
+}
 
 /*funky function to remove all games then insert games based on what user types into FilerResultsBox */
 /*or you could install react to handle all this but this is a lightweight example */
@@ -47,5 +61,3 @@ api.onreadystatechange = (e) =>{
     object = JSON.parse(api.responseText);
     insertCards(object);
 }
-
-

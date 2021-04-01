@@ -17,15 +17,15 @@
 <body class="body">
     
     <div id="headings">
-        <h1>VIDEO GAMES</h1>
+        <h1 onclick="VideoGamesClick()">VIDEO GAMES</h1>
 
-        <h1>CONTACT</h1>
+        <h1 onclick="contactClick()">CONTACT</h1>
     </div>
             
 
     <div id="content">
         
-        <div id="sidepanel">
+        <div class="sidepanel">
             <h3>Filter Results</h3>
             <h4>Name (contains)</h4>
                 <input type="text" placeholder="Text String" onchange="userTyped(this)">
@@ -54,6 +54,21 @@
 
     </div>
 
+    <div id="contact">
+        <h2>GET IN TOUCH</h2>
+        <p>Lorrum ipsum</p>
+
+        <div class="sidepanel">
+            <h3>Contact Form</h3>
+            <h4>Name *</h4>
+            <input>
+            <h4>Email Address *</h4>
+            <input>
+            <h4>Message</h4>
+            <input>
+            <button>Send</button>
+        </div>
+    </div>
 </body>
 <script defer src="script.js"></script>
 </html>
